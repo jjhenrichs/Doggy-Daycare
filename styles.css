@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Header */
+
+.desktop {
+  display: flex;
+  background: blue;
+  height: 8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 770px) {
+}
+
+@media only screen and (max-width: 425px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    background: red;
+    height: 4rem;
+  }
+}
+
+/* Main */
+
+/* Footer */
