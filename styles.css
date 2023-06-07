@@ -17,7 +17,6 @@ a {
 
 .desktop {
   display: flex;
-  background: cyan;
   height: 5rem;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +26,7 @@ a {
   display: none;
 }
 
-.logo {
+.desktop .logo {
   font-family: "Rubik Puddles", cursive;
   font-size: 1.5rem;
   padding-left: 2rem;
@@ -50,14 +49,13 @@ nav ul li {
   }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 490px) {
   .desktop {
     display: none;
   }
 
   .mobile {
     display: flex;
-    background: hotpink;
     align-items: center;
     justify-content: start;
   }
@@ -76,8 +74,83 @@ nav ul li {
   img {
     height: 2rem;
   }
+
+  .logo {
+    height: 2.5rem;
+  }
 }
 
 /* Main */
 
 /* Footer */
+
+.social-media {
+  padding: 1rem 2rem 0.5rem;
+  background: burlywood;
+  color: brown;
+  display: flex;
+}
+
+.social-media p {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.sm-icons {
+  display: flex;
+  list-style: none;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.sm-icons img {
+  height: 2rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem 1rem;
+  background: burlywood;
+  color: brown;
+}
+
+@media only screen and (max-width: 770px) {
+  .social-media p {
+    justify-content: start;
+    width: 120px;
+    padding-left: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .social-media p {
+    display: none;
+  }
+
+  .social-media {
+    padding: 0.5rem;
+    padding-bottom: 0;
+  }
+
+  .sm-icons {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .sm-icons {
+    justify-content: space-between;
+  }
+}
