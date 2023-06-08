@@ -14,15 +14,16 @@ a {
 }
 
 /* Header */
-header {
-  background: blanchedalmond;
-}
 
 .desktop {
   display: flex;
   height: 5rem;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: blanchedalmond;
 }
 
 .mobile {
@@ -61,6 +62,10 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: start;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background: blanchedalmond;
   }
 
   nav {
