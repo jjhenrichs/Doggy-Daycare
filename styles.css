@@ -87,6 +87,58 @@ nav ul li {
 
 /* Mission Section */
 
+.mission {
+  background-image: url("./images/puppy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 38rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blanchedalmond;
+}
+
+.banner {
+  text-align: center;
+  width: 30rem;
+}
+
+.banner h1 {
+  padding: 1rem 1rem 2rem;
+}
+
+.banner p {
+  padding: 0.5rem 1rem 2rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .mission {
+    height: 28rem;
+  }
+
+  .banner {
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .mission {
+    height: 18rem;
+  }
+
+  .banner {
+    width: 15rem;
+  }
+
+  .banner h1 {
+    font-size: 0.9rem;
+  }
+  .banner p {
+    font-size: 0.75rem;
+  }
+}
+
 /* Services Section */
 
 /* Staff Section */
