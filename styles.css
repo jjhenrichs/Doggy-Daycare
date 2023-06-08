@@ -14,6 +14,9 @@ a {
 }
 
 /* Header */
+header {
+  background: blanchedalmond;
+}
 
 .desktop {
   display: flex;
@@ -72,21 +75,109 @@ nav ul li {
   }
 
   img {
-    height: 2rem;
+    height: 1.75rem;
   }
 
   .logo {
-    height: 2.5rem;
+    height: 2rem;
   }
 }
 
 /* Main */
 
+/* Mission Section */
+
+/* Services Section */
+
+/* Staff Section */
+
+/* Location Section */
+
+.location-section {
+  background-color: #4a4a4a;
+  padding: 0.5rem 1rem 4rem;
+  text-align: center;
+}
+
+.location-section h1 {
+  color: yellow;
+  padding: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 275px;
+  border: 2px solid gold;
+  border-radius: 16px;
+  color: gold;
+}
+
+.card img {
+  width: 90%;
+  height: 40%;
+  background-size: cover;
+}
+.address {
+  color: yellow;
+  margin: 1rem 2rem;
+  padding: 5px 3px;
+}
+
+.hours {
+  text-align: left;
+  margin: 0.25rem 1.5rem;
+  line-height: 1.375;
+}
+
+@media only screen and (max-width: 770px) {
+  .location-section {
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+  }
+
+  .location-section h1 {
+    padding: 1rem;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+  }
+
+  .card {
+    margin: 0.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .location-section h1 {
+    display: none;
+  }
+
+  .card h1 {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .address,
+  .hours {
+    font-size: 0.8rem;
+  }
+}
+
 /* Footer */
+
+footer {
+  background-color: blanchedalmond;
+}
 
 .social-media {
   padding: 1rem 2rem 0.5rem;
-  background: burlywood;
   color: brown;
   display: flex;
 }
@@ -115,7 +206,6 @@ nav ul li {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem 1rem;
-  background: burlywood;
   color: brown;
 }
 
@@ -140,6 +230,10 @@ nav ul li {
   .sm-icons {
     width: 100%;
     justify-content: space-around;
+  }
+
+  .sm-icons img {
+    height: 1.75rem;
   }
 
   .copyright {
