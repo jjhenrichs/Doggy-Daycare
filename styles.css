@@ -154,8 +154,6 @@ nav ul li {
 /* Services Section */
 
 #services {
-  border: 1px solid red;
-
   background-color: blanchedalmond;
 }
 
@@ -238,14 +236,12 @@ nav ul li {
 
 /* Location Section */
 
-.location-section {
+#location {
   background-color: #4a4a4a;
-  padding: 0.5rem 1rem 4rem;
   text-align: center;
 }
 
-.location-section h1 {
-  color: yellow;
+/* .location-section h1 {
   padding: 2rem;
 }
 
@@ -276,11 +272,10 @@ nav ul li {
   text-align: left;
   margin: 0.25rem 1.5rem;
   line-height: 1.375;
-}
+} */
 
 @media only screen and (max-width: 770px) {
-  .location-section {
-    border: 1px solid black;
+  /* .location-section {
     padding: 0.5rem 1rem;
   }
 
@@ -295,22 +290,60 @@ nav ul li {
 
   .card {
     margin: 0.5rem 0;
-  }
+  } */
 }
 
 @media only screen and (max-width: 425px) {
-  .location-section h1 {
-    display: none;
+  #location .cards {
+    padding: 0.5rem;
   }
 
-  .card h1 {
+  #location .card {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0.5rem;
+  }
+
+  #location .card h1 {
     display: block;
+    padding: 1rem 0 0.5rem;
+    color: burlywood;
+  }
+
+  #location .address,
+  #location .hours,
+  #location .phone {
+    color: blanchedalmond;
+    padding: 0.75rem;
+  }
+
+  #location .card2 .hours {
+    color: orange;
+  }
+
+  #location .card1 {
+    background-image: url("./images/cleveland.jpg");
+  }
+
+  #location .card2 {
+    background-image: url("./images/pittsburgh.jpg");
+  }
+
+  #location .card3 {
+    background-image: url("./images/philly.jpg");
+  }
+
+  #location h1,
+  #location img {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 335px) {
   .address,
-  .hours {
+  .hours,
+  .phone {
     font-size: 0.8rem;
   }
 }
