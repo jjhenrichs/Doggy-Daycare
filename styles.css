@@ -92,7 +92,7 @@ nav ul li {
 
 /* Mission Section */
 
-.mission {
+#mission {
   background-image: url("./images/puppy.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@ nav ul li {
 }
 
 @media only screen and (max-width: 770px) {
-  .mission {
+  #mission {
     height: 28rem;
   }
 
@@ -144,9 +144,97 @@ nav ul li {
   }
 }
 
+/* Staff Section */
+
+.staff {
+  height: 38rem;
+  border: 1px solid black;
+}
+
 /* Services Section */
 
-/* Staff Section */
+#services {
+  border: 1px solid red;
+
+  background-color: blanchedalmond;
+}
+
+#services .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-evenly;
+  padding: 1rem;
+}
+
+#services .card {
+  width: 20rem;
+  margin: 0.5rem;
+}
+
+#services .card img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 1rem;
+}
+
+#services .card h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 710px) {
+  #services {
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  #services .card img {
+    display: none;
+  }
+
+  #services .card {
+    border: none;
+    border-radius: 0%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 14rem;
+    margin-top: 0;
+    height: 10rem;
+  }
+
+  #services .card h1 {
+    opacity: 0.75;
+    text-align: center;
+    margin-top: 3rem;
+    color: blanchedalmond;
+    opacity: 0.8;
+    font-size: 2.5rem;
+  }
+
+  #services .card1 h1 {
+    color: burlywood;
+  }
+
+  #services .card1 {
+    background-image: url("./images/daycare.jpg");
+  }
+
+  #services .card2 {
+    background-image: url("./images/dog-training.jpg");
+  }
+
+  #services .card3 {
+    background-image: url("./images/dog-lodging.jpg");
+  }
+
+  #services .card4 {
+    background-image: url("./images/petshop.jpg");
+  }
+}
 
 /* Location Section */
 
@@ -161,12 +249,12 @@ nav ul li {
   padding: 2rem;
 }
 
-.cards {
+.location-section .cards {
   display: flex;
   justify-content: space-around;
 }
 
-.card {
+.location-section .card {
   width: 275px;
   border: 2px solid gold;
   border-radius: 16px;
