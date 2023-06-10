@@ -144,13 +144,6 @@ nav ul li {
   }
 }
 
-/* Staff Section */
-
-.staff {
-  height: 38rem;
-  border: 1px solid black;
-}
-
 /* Services Section */
 
 #services {
@@ -340,6 +333,75 @@ nav ul li {
   .hours,
   .phone {
     font-size: 0.8rem;
+  }
+}
+
+/* Testimonials Section */
+
+#testimonials {
+  border: 1px solid black;
+  padding: 0 2rem 1rem;
+}
+
+.testimonies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.testimony {
+  border: 1px solid black;
+  padding: 1rem;
+  max-width: 45%;
+  margin: 1.5rem;
+}
+
+.post {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-right: 3rem;
+}
+
+.commenter {
+  float: right;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 770px) {
+  .testimony {
+    max-width: none;
+  }
+  .post {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .testimony {
+    width: 100%;
+  }
+
+  .post {
+    font-size: 1.25rem;
+    width: auto;
+  }
+
+  .commenter {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 525px) {
+  #testimonials .title {
+    display: none;
+  }
+
+  .post {
+    margin-right: 0;
+  }
+
+  .commenter {
+    margin: 0.5rem;
   }
 }
 
