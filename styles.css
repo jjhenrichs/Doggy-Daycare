@@ -241,61 +241,53 @@ nav ul li {
   text-align: center;
 }
 
-/* .location-section h1 {
-  padding: 2rem;
+.title {
+  padding: 2rem 0 1.25rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
-.location-section .cards {
+#location .cards {
+  padding: 1rem 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.location-section .card {
-  width: 275px;
-  border: 2px solid gold;
-  border-radius: 16px;
-  color: gold;
+#location .card {
+  border: 1px solid yellow;
+  border-radius: 1rem;
+  width: 400px;
+  color: yellow;
+  margin: 0.75rem;
 }
 
-.card img {
-  width: 90%;
-  height: 40%;
-  background-size: cover;
+#location .card h1 {
+  padding: 1rem 0.25rem;
+  font-size: 1.5rem;
 }
+
+#location .card img {
+  width: 95%;
+  padding: 0.5rem;
+}
+
 .address {
-  color: yellow;
-  margin: 1rem 2rem;
-  padding: 5px 3px;
+  padding: 1rem 0 0.5rem;
 }
 
 .hours {
-  text-align: left;
-  margin: 0.25rem 1.5rem;
-  line-height: 1.375;
-} */
-
-@media only screen and (max-width: 770px) {
-  /* .location-section {
-    padding: 0.5rem 1rem;
-  }
-
-  .location-section h1 {
-    padding: 1rem;
-  }
-
-  .cards {
-    flex-wrap: wrap;
-    padding: 0.5rem 1rem;
-  }
-
-  .card {
-    margin: 0.5rem 0;
-  } */
+  padding: 0.5rem;
 }
 
-@media only screen and (max-width: 425px) {
+.phone {
+  padding: 0.5rem 0 1rem;
+}
+
+@media only screen and (max-width: 525px) {
   #location .cards {
     padding: 0.5rem;
+    display: block;
   }
 
   #location .card {
@@ -303,6 +295,9 @@ nav ul li {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0.5rem;
+    width: 95%;
+    padding: 0;
+    border-radius: 0;
   }
 
   #location .card h1 {
