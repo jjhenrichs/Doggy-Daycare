@@ -7,6 +7,8 @@ all screen sizes.
 ## Technologies Used
 
 - Flexbox
+- CSS
+- HTML5
 
 ## Screenshots
 
@@ -20,12 +22,14 @@ Live demo [here](https://gleeful-clafoutis-55861f.netlify.app/)
 
 ## Lessons Learned
 
-- Created a website with Responsive Layout using Flexbox
+- Create a website with Responsive Layout using Flexbox
+- Able to postion and layout content with CSS
+- Define the structure of a website with HTML5
 
 ## Project Status
 
-Completed. Though I am open to suggestions
+Completed. Though I am open to suggestions.
 
 ## Acknowledgements
 
-This project is part of the [Codecademy](https://www.codecademy.com) Front-End Engineer Paths
+This project is part of the [Codecademy](https://www.codecademy.com) Front-End Engineer Path
